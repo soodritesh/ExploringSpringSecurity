@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "804c5fbf-f6be-41ce-a0cd-4a6f0b1cde96",
+		"name": "Authorization-IpAddress",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25487517"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8008/public/homepage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8008/public/homepage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"public",
+						"homepage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8008/public/homepage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : \"1\",\n    \"firstname\" : \"Mayuri\",\n    \"lastname\" : \"Samanta\",\n    \"email\" : \"mayuri@gmail.com\",\n    \"password\" : \"12345\",\n    \"mobile\" : \"8564215320\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8008/public/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"public",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8008/public/homepage",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : \"2\",\n    \"firstname\" : \"Mayuri\",\n    \"lastname\" : \"Samanta\",\n    \"email\" : \"mayuri@gmail.com\",\n    \"password\" : \"12345\",\n    \"mobile\" : \"8564215320\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8008/private/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8008",
+					"path": [
+						"private",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
